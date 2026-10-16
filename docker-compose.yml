@@ -1,9 +1,7 @@
 
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: vysakhsankar/python-docker-cicd:latest
     ports:
       - "8000:5005"
     environment:
