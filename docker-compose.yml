@@ -1,0 +1,11 @@
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:5005"
+    environment:
+      SECRET_KEY: "local-development-only-change-me"
+    restart: unless-stopped
